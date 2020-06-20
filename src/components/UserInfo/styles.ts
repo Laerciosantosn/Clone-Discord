@@ -24,14 +24,71 @@ export const Avatar = styled.div`
   width: 32px;
   height: 32px;
   border-radius: 50%;
+
+  background-color: var(--gray);
 `;
 
-export const UserData = styled.div``;
+export const UserData = styled.div`
+  margin-left: 8px;
 
-export const Icons = styled.div``;
+  display: flex;
+  flex-direction: column;
 
-export const MicIcon = styled(Mic)``;
+  > strong {
+    display: block;
+    font-size: 12px;
+  }
 
-export const HeadphoneIcon = styled(Headset)``;
+  > span {
+    color: var(--gray);
+    font-size: 12px;
+  }
+`;
 
-export const SettingsIcon = styled(Settings)``;
+export const Icons = styled.div`
+  display: flex;
+  align-items: center;
+
+  > svg:not(:first-child) {
+    margin-left: 8px;
+  }
+`;
+
+export const MicIcon = styled(Mic)`
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+
+export const HeadphoneIcon = styled(Headset)`
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+
+export const SettingsIcon = styled(Settings)`
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
