@@ -1,15 +1,14 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Messages, InputWrapper, Input, InputIcon } from './styles';
 
 const ChanelData: React.FC = () => {
   return (
     <Container>
       <Messages />
       <InputWrapper>
-        <Input>
-          <InputIcon />
-        </Input>
+        <Input type="text" placeholder="Conversar em #chat-livre" />
+        <InputIcon />
       </InputWrapper>
     </Container>
   );
